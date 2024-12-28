@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Galería de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px; /* Asegura que haya un espacio adecuado entre el contenido y el pie de página */
+        }
+        .main-content h2 {
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Cambié esto para que no se fije al fondo */
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px; /* Asegura que haya espacio entre el pie y el contenido */
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Establecer espacio en la parte inferior del contenido */
+        .content-wrapper {
+            padding-bottom: 50px; /* Añadir espacio antes del pie de página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto - Galería de Juegos</h1>
+    </header>
+    <nav>
+        <a href="INICIO.html">Inicio</a>
+        <a href="SWIPE.html">Descargas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h2>¡Contáctanos!</h2>
+            <p>Si tienes alguna pregunta o sugerencia, por favor completa el formulario de abajo.</p>
+
+            <div class="contact-form">
+<form
+  action="https://formspree.io/f/mrbgwvrl"
+  method="POST"
+>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+</form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </footer>
+</body>
+</html>
