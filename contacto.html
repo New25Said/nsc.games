@@ -124,21 +124,28 @@ nav a:hover {
 <form
   action="https://formspree.io/f/mrbgwvrl"
   method="POST"
+  onsubmit="mostrarBoton(event)"
 >
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar mensaje</button>
+    <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Enviar mensaje</button>
 </form>
+
+<!-- Botón oculto inicialmente -->
+<div id="redirect-btn" style="display: none; margin-top: 20px;">
+    <button onclick="location.href='gracias.html'">Ir a página de agradecimiento</button>
+</div>
+
             </div>
         </div>
     </div>
