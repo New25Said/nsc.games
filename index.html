@@ -136,28 +136,44 @@
             Esperando Marzo para reclutar staff, mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto
         </p>
     </div>
-    <img src="GUacat.png" alt="Spoiler: ES DIEGOOOO" class="agrandar" style="margin-left: 15px; max-width: 150px;">
+    <img src="GUacat.png" alt="Spoiler: ES DIEGOOOO" id="guacatImage" class="agrandar" style="margin-left: 15px; max-width: 150px;">
 </div>
 
 <footer>
     <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
 </footer>
 
-<!-- Agregar el archivo de audio -->
-<audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
+<!-- Agregar los archivos de audio -->
+<audio id="clickSoundBeta" src="click-sound.mp3" preload="auto"></audio>
+<audio id="clickSoundGuacat" src="get-out-tuco.mp3" preload="auto"></audio>
 
 <script>
-    let clickCount = 0;
+    let clickCountBeta = 0;
+    let clickCountGuacat = 0;
+
     const betaImage = document.getElementById('betaImage');
-    const clickSound = document.getElementById('clickSound');
+    const guacatImage = document.getElementById('guacatImage');
+    const clickSoundBeta = document.getElementById('clickSoundBeta');
+    const clickSoundGuacat = document.getElementById('clickSoundGuacat');
 
     betaImage.addEventListener('click', function() {
-        clickCount++;
+        clickCountBeta++;
 
         // Reproducir sonido al hacer clic
-        clickSound.play();
+        clickSoundBeta.play();
 
-        if (clickCount === 3) {
+        if (clickCountBeta === 3) {
+            window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
+        }
+    });
+
+    guacatImage.addEventListener('click', function() {
+        clickCountGuacat++;
+
+        // Reproducir sonido al hacer clic
+        clickSoundGuacat.play();
+
+        if (clickCountGuacat === 3) {
             window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
         }
     });
