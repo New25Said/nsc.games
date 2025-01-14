@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-</head> <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> <head>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Galería de Juegos</title>
@@ -15,30 +16,30 @@
             min-height: 100vh;
         }
         header {
-            background-color:  #348a66;
+            background-color: #348a66;
             color: #fff;
             text-align: center;
             padding: 30px 0;
         }
-                nav {
+        nav {
             text-align: center;
             margin-bottom: 20px;
         }
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 0 5px;
-    background-color: #74ad95; /* Color de fondo de los botones */
-    border: 1px solid #74ad95; /* Color del borde */
-    border-radius: 5px;
-    display: inline-block;
-    font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
-    transition: background-color 0.3s ease;
-}
-nav a:hover {
-    background-color: #5e8b77; /* Color al pasar el mouse */
-    color: #fff; /* Texto blanco al hacer hover */
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #74ad95;
+            border: 1px solid #74ad95;
+            border-radius: 5px;
+            display: inline-block;
+            font-family: 'Comfortaa', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #5e8b77;
+            color: #fff;
         }
         .main-content {
             max-width: 800px;
@@ -46,15 +47,15 @@ nav a:hover {
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 50px; /* Asegura que haya un espacio adecuado entre el contenido y el pie de página */
+            margin-bottom: 50px;
         }
         .main-content h2 {
             margin-bottom: 20px;
-                font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
+            font-family: 'Comfortaa', sans-serif;
         }
         .main-content p {
             margin-bottom: 20px;
-            font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
+            font-family: 'Comfortaa', sans-serif;
             line-height: 1.6;
         }
         .contact-form input, .contact-form textarea {
@@ -72,7 +73,7 @@ nav a:hover {
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-family: roboto; 
+            font-family: roboto;
         }
         .contact-form button:hover {
             background-color: #45a049;
@@ -82,10 +83,10 @@ nav a:hover {
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: relative; /* Cambié esto para que no se fije al fondo */
+            position: relative;
             bottom: 0;
             width: 100%;
-            margin-top: 10px; /* Asegura que haya espacio entre el pie y el contenido */
+            margin-top: 10px;
         }
         footer a {
             color: #4CAF50;
@@ -94,10 +95,12 @@ nav a:hover {
         footer a:hover {
             text-decoration: underline;
         }
-
-        /* Establecer espacio en la parte inferior del contenido */
         .content-wrapper {
-            padding-bottom: 50px; /* Añadir espacio antes del pie de página */
+            padding-bottom: 100px; /* Incrementa el espacio para evitar superposiciones */
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -106,10 +109,9 @@ nav a:hover {
         <h1>Contacto - Galería de Juegos</h1>
     </header>
 
-
     <div style="background-color: #74ad95; height: 40px; width: 100%; position: absolute; margin-top: 140px; left: 0; z-index: 1;"></div>
 
-<nav style="position: relative; z-index: 2; margin-top: 0px;">
+    <nav style="position: relative; z-index: 2; margin-top: 0px;">
         <a href="index.html">Inicio</a>
         <a href="SWIPE.html">Descargas</a>
         <a href="contacto.html">Contacto</a>
@@ -121,28 +123,28 @@ nav a:hover {
             <p>Si tienes alguna pregunta o sugerencia, por favor completa el formulario de abajo.</p>
 
             <div class="contact-form">
-<form
-  action="https://formspree.io/f/mrbgwvrl"
-  method="POST"
->
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+                <form action="https://formspree.io/f/mrbgwvrl" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit">Enviar mensaje</button>
+                        <button onclick="location.href='nsc.games/secretgame/'" type="button">Enviar como Sugerencia</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-<div style="display: flex; gap: 10px;">
-    <button type="submit">Enviar mensaje</button>
-    <button onclick="location.href='/nsc.games/secretgame/'">Juego Secreto</button>
-</div>
-</form>
         </div>
     </div>
+
     <footer>
         <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
     </footer>
