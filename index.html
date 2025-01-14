@@ -143,15 +143,22 @@
     <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
 </footer>
 
+<!-- Agregar el archivo de audio -->
+<audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
+
 <script>
     let clickCount = 0;
     const betaImage = document.getElementById('betaImage');
+    const clickSound = document.getElementById('clickSound');
 
     betaImage.addEventListener('click', function() {
         clickCount++;
 
+        // Reproducir sonido al hacer clic
+        clickSound.play();
+
         if (clickCount === 3) {
-            window.location.href = "gamegalery.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
+            window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
         }
     });
 </script>
