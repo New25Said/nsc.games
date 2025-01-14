@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-</head> <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> <head>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FileGalery!</title>
@@ -13,7 +14,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-           }
+        }
         header {
             background-color: #348a66;
             color: #fff;
@@ -24,22 +25,21 @@
             text-align: center;
             margin-bottom: 20px;
         }
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 0 5px;
-    background-color: #74ad95; /* Color de fondo de los botones */
-    border: 1px solid #74ad95; /* Color del borde */
-    border-radius: 5px;
-    display: inline-block;
-    font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
-    transition: background-color 0.3s ease;
-}
-nav a:hover {
-    background-color: #5e8b77; /* Color al pasar el mouse */
-    color: #fff; /* Texto blanco al hacer hover */
-
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #74ad95;
+            border: 1px solid #74ad95;
+            border-radius: 5px;
+            display: inline-block;
+            font-family: 'Comfortaa', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #5e8b77;
+            color: #fff;
         }
         .main-content {
             max-width: 800px;
@@ -63,10 +63,9 @@ nav a:hover {
             color: #fff;
             text-align: center;
             padding: 10px 0;
-
             bottom: 0;
             width: 100%;
-             z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+            z-index: 1000;
         }
         footer a {
             color: #4CAF50;
@@ -77,12 +76,12 @@ nav a:hover {
         }
 
         .agrandar {
-  transition: transform 0.3s ease; /* Hace que la transición sea suave */
-}
+            transition: transform 0.3s ease;
+        }
 
-.agrandar:hover {
-  transform: scale(1.1); /* Agranda la imagen al 110% de su tamaño original */
-}
+        .agrandar:hover {
+            transform: scale(1.1);
+        }
 
     </style>
 </head>
@@ -100,25 +99,23 @@ nav a:hover {
     <a href="contacto.html">Contacto</a>
 </nav>
 
+<!-- Sección de Inicio -->
+<div class="main-content">
+    <h2>¡Descubre juegos desbloqueados!</h2>
+    <p>Encuentra tu próximo juego favorito y disfruta de horas de diversión.
+        Próximamente juegos online y ports para paginas y juegos.</p>
+</div>
 
-    <!-- Sección de Inicio -->
-    <div class="main-content">
-        <h2>¡Descubre juegos desbloqueados!</h2>
-        <p>Encuentra tu próximo juego favorito y disfruta de horas de diversión.
-            Próximamente juegos online y ports para paginas y juegos.</p>
-    </div>
-
-<!-- Texto "Creadores" centrado -->
 <!-- Texto "Creadores" centrado con líneas decorativas -->
-    <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-        <div style="flex-grow: 1; height: 1px; background-color: #000; margin-right: 10px;"></div>
-        <h2 style="text-align: center; margin: 0; font-size: 18px; font-family: 'Comfortaa', sans-serif;">Creadores</h2>
-        <div style="flex-grow: 1; height: 1px; background-color: #000; margin-left: 10px;"></div>
+<div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+    <div style="flex-grow: 1; height: 1px; background-color: #000; margin-right: 10px;"></div>
+    <h2 style="text-align: center; margin: 0; font-size: 18px; font-family: 'Comfortaa', sans-serif;">Creadores</h2>
+    <div style="flex-grow: 1; height: 1px; background-color: #000; margin-left: 10px;"></div>
 </div>
 
 <!-- Imagen a la izquierda -->
 <div class="main-content" style="display: flex; align-items: flex-start;">
-<img src="BETAfile.png" alt="Yey!!" class="agrandar" style="margin-right: 15px; max-width: 150px;">
+    <img src="BETAfile.png" alt="Yey!!" id="betaImage" class="agrandar" style="margin-right: 15px; max-width: 150px;">
     <div>
         <h3 style="font-weight: bold; margin: 0; display: inline;">Said Sandoval / Sa1xp</h3>
         <span style="font-weight: normal; margin-left: 5px;">(Creador)</span>
@@ -136,15 +133,28 @@ nav a:hover {
         <h3 style="font-weight: bold; margin: 0; display: inline;">Nadie</h3>
         <span style="font-weight: normal; margin-left: 5px;">(xd absolutamente nadie)</span>
         <p>
-            Esperando Marzo para reclutar staff, mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto 
+            Esperando Marzo para reclutar staff, mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto mucho texto
         </p>
     </div>
-   <img src="GUacat.png" alt="Spoiler: ES DIEGOOOO" class="agrandar" style="margin-left: 15px; max-width: 150px;">
+    <img src="GUacat.png" alt="Spoiler: ES DIEGOOOO" class="agrandar" style="margin-left: 15px; max-width: 150px;">
 </div>
-    
-    <footer>
-        <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
-    </footer>
+
+<footer>
+    <p>&copy; 2024 Said Sandoval. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+</footer>
+
+<script>
+    let clickCount = 0;
+    const betaImage = document.getElementById('betaImage');
+
+    betaImage.addEventListener('click', function() {
+        clickCount++;
+
+        if (clickCount === 3) {
+            window.location.href = "gamegalery.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
+        }
+    });
+</script>
 
 </body>
 </html>
