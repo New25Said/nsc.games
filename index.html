@@ -157,25 +157,27 @@
     const clickSoundGuacat = document.getElementById('clickSoundGuacat');
 
     betaImage.addEventListener('click', function() {
-        clickCountBeta++;
-
-        // Reproducir sonido al hacer clic
         clickSoundBeta.play();
 
-        if (clickCountBeta === 3) {
-            window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
-        }
+        // Usar setTimeout para asegurarnos de que el sonido termine antes de contar el clic
+        setTimeout(function() {
+            clickCountBeta++;
+            if (clickCountBeta === 3) {
+                window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
+            }
+        }, clickSoundBeta.duration * 1000); // espera a que termine el sonido
     });
 
     guacatImage.addEventListener('click', function() {
-        clickCountGuacat++;
-
-        // Reproducir sonido al hacer clic
         clickSoundGuacat.play();
 
-        if (clickCountGuacat === 3) {
-            window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
-        }
+        // Usar setTimeout para asegurarnos de que el sonido termine antes de contar el clic
+        setTimeout(function() {
+            clickCountGuacat++;
+            if (clickCountGuacat === 3) {
+                window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
+            }
+        }, clickSoundGuacat.duration * 1000); // espera a que termine el sonido
     });
 </script>
 
