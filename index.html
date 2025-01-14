@@ -145,7 +145,7 @@
 
 <!-- Agregar los archivos de audio -->
 <audio id="clickSoundBeta" src="click-sound.mp3" preload="auto"></audio>
-<audio src="get-out-tuco.mp3" preload="auto"></audio>
+<audio id="clickSoundGuacat" src="get-out-tuco.mp3" preload="auto"></audio>
 
 <script>
     let clickCountBeta = 0;
@@ -156,6 +156,7 @@
     const clickSoundBeta = document.getElementById('clickSoundBeta');
     const clickSoundGuacat = document.getElementById('clickSoundGuacat');
 
+    // Event listener para la imagen de BETAfile
     betaImage.addEventListener('click', function() {
         clickSoundBeta.play();
 
@@ -168,16 +169,10 @@
         }, clickSoundBeta.duration * 1000); // espera a que termine el sonido
     });
 
+    // Event listener para la imagen de GUacat, sin redirección
     guacatImage.addEventListener('click', function() {
         clickSoundGuacat.play();
-
-        // Usar setTimeout para asegurarnos de que el sonido termine antes de contar el clic
-        setTimeout(function() {
-            clickCountGuacat++;
-            if (clickCountGuacat === 3) {
-                window.location.href = "otra_pagina.html"; // Cambia "otra_pagina.html" al nombre de tu página de destino
-            }
-        }, clickSoundGuacat.duration * 1000); // espera a que termine el sonido
+        // No hay redirección, solo sonido al hacer clic
     });
 </script>
 
