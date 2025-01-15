@@ -33,7 +33,7 @@
             border: 1px solid #74ad95;
             border-radius: 5px;
             display: inline-block;
-            font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
+            font-family: 'Comfortaa', sans-serif;
             transition: background-color 0.3s ease;
         }
         nav a:hover {
@@ -67,22 +67,43 @@
             margin-bottom: 20px;
             line-height: 1.6;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
         .download-button {
             display: block;
             width: 200px;
-            margin: 20px auto;
             text-align: center;
             padding: 10px 20px;
             background-color: #4caf98;
             color: white;
-            font-family: 'Comfortaa', sans-serif; /* Usando la fuente Comfortaa */
+            font-family: 'Comfortaa', sans-serif;
             text-decoration: none;
             border-radius: 5px;
-             transition: transform 0.3s ease; /* Hace que la transición sea suave */
+            transition: transform 0.3s ease;
         }
         .download-button:hover {
             background-color: #398573;
-              transform: scale(1.1); /* Agranda el botón al 110% de su tamaño original */
+            transform: scale(1.1);
+        }
+        .extra-button {
+            display: block;
+            width: 200px;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #8932a8;
+            color: white;
+            font-family: 'Comfortaa', sans-serif;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .extra-button:hover {
+            background-color: #6d2484;
+            transform: scale(1.1);
         }
         footer {
             background-color: #333;
@@ -118,7 +139,10 @@
         <img src="imagen-del-juego.jpg" alt="Imagen del Juego">
         <p><strong>Juego 1</strong><br>
         <p>Descripción breve del juego, destacando sus características principales y por qué deberían descargarlo.</p>
-        <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+        <div class="button-container">
+            <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+            <a href="#" class="extra-button">Jugar Ahora ⚡</a>
+        </div>
     </div>
 
     <!-- Segunda sección -->
@@ -126,7 +150,10 @@
         <img src="imagen-del-juego.jpg" alt="Imagen del Juego">
         <p><strong>Juegos 2</strong><br>
         <p>Descripción breve del juego, destacando sus características principales y por qué deberían descargarlo.</p>
-        <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+        <div class="button-container">
+            <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+            <a href="#" class="extra-button">Jugar Ahora ⚡</a>
+        </div>
     </div>
 
     <!-- Tercera sección -->
@@ -137,7 +164,10 @@
         El Hotel Solsticio, un hotel abandonado en medio de la nada, esconde secretos oscuros bajo su elegante fachada. Durante décadas, este hotel ha sido testigo de sucesos inexplicables, desapariciones y la lenta caída en el olvido... pero tú, ¿podrás descubrir el pasado y el misterio que esconde este hotel?<br><br>
         Explora pasillos cubiertos de polvo, habitaciones llenas de recuerdos olvidados y rincones oscuros donde el tiempo parece haberse detenido. ¿Qué ocurrió con los huéspedes que nunca abandonaron el hotel?<br><br>
         En este juego de suspenso y exploración, cada decisión puede llevarte más cerca de la verdad... o a perderte para siempre en las sombras del Solsticio.</p>
-        <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+        <div class="button-container">
+            <a href="enlace-de-descarga-del-juego" class="download-button">Descargar Juego</a>
+            <a href="#" class="extra-button">Jugar Ahora ⚡</a>
+        </div>
     </div>
 
     <footer>
