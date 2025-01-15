@@ -5,22 +5,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | NSMB-MarioVsLuigi</title>
     <style>
-      /* Asegúrate de que html y body ocupen todo el espacio visible */
+      /* Asegurar que html y body ocupen el 100% del tamaño */
       html, body {
         margin: 0;
         padding: 0;
         width: 100%;
         height: 100%;
-        overflow: hidden; /* Evita barras de desplazamiento */
-        background: #231F20;
+        overflow: hidden; /* Eliminar barras de desplazamiento */
+        background: #231F20; /* Fondo del navegador */
       }
 
-      /* Canvas ocupa todo el espacio */
+      /* Configuración del canvas */
       #unity-canvas {
         width: 100%;
         height: 100%;
         display: block;
-        background: #231F20;
+        background: #231F20; /* Fondo del canvas */
       }
     </style>
   </head>
@@ -29,13 +29,14 @@
     <script src="MarioVsLuigi-WebGL.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
+        // Estilo móvil: asegura que el canvas llene el área visible
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
+      // Crear instancia de Unity
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "MarioVsLuigi-WebGL.data.unityweb",
         frameworkUrl: "MarioVsLuigi-WebGL.framework.js.unityweb",
@@ -44,8 +45,7 @@
         companyName: "ipodtouch0218",
         productName: "NSMB-MarioVsLuigi",
         productVersion: "1.7.1.0-beta",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        matchWebGLToCanvasSize: true, // Asegura que el WebGL coincida con el tamaño del canvas
       });
     </script>
   </body>
